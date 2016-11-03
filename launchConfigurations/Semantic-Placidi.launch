@@ -1,0 +1,14 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.eu-gb.bluemix.net",
+      "Org": "wiper_shock@yahoo.it",
+      "Space": "dev"
+    },
+    "Name": "Semantic-Placidi",
+    "Instrumentation": {}
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
+}

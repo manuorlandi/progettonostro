@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <title>CS101 Standford Videolecture Analysis - Marco Placidi Fork</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="_dashboard--header">
+    <div class="_dashboard--container">
+      <a class="header--container" href="/">
+        <div class="header--logo">
+          <img src="1images/logo.png" alt="" />
+        </div>
+        <div class="header--title">
+          CS101 Standford Videolecture Analysis - Marco Placidi Fork
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="_dashboard--video-session">
+    <div class="_dashboard--container">
+      <a class="video-session--another-video-btn" href="/#video-picking">
+        <span class="video-session--back-btn-icon icon icon-back-btn"></span>
+        <span class="video-session--text">seleziona videolezione</span>
+      </a>
+
+      <div class="video-session--video" id="videoSession">
+      </div>
+
+      <div class="video-session--video-title">
+      </div>
+
+      <div class="_hidden--video video-session--hidden-video">
+        <video id="inlinevideo" hidden></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="_dashboard--analysis">
+    <div class="_dashboard--container">
+      <div class="_dashboard--recommendation">
+        <div class="recommendation--title-container">
+          <div class="recommendation--title _dashboard--title">
+            Materiale consigliato
+          </div>
+          <div class="recommendation--description">
+             
+          </div>
+        </div>
+        <div class="recommendation--content-container">
+          <div class="recommendation--container">
+            <div class="recommendation--TED">
+              <div class="recommendation--TED-title">
+                TED Talk about climate change science
+              </div>
+              <div class="recommendation--TED-author">
+                Dr. Climate Scientist
+              </div>
+            </div>
+            <div class="recommendation--concept-container">
+              <div class="recommendation--concept">
+                Greenhouse gas
+              </div>
+              <div class="recommendation--concept">
+                Fossil Fuel
+              </div>
+              <div class="recommendation--concept">
+                Climate
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="_dashboard--timeline">
+        <div class="timeline--title-container">
+          <div class="timeline--title _dashboard--title">
+            Timeline
+          </div>
+          <div class="timeline--legend">
+            <div class="timeline--legend-container">
+              <span class="timeline--legend-high-icon"></span>
+              <span class="timeline--legend-text">Alta Confidenza</span>
+            </div>
+            <div class="timeline--legend-container">
+              <span class="timeline--legend-middle-icon"></span>
+              <span class="timeline--legend-text">Media Confidenza</span>
+            </div>
+            <div class="timeline--legend-container">
+              <span class="timeline--legend-low-icon"></span>
+              <span class="timeline--legend-text">Bassa Confidenza</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline--container">
+          <div class="timeline--content-container">
+            <div class="timeline--content-block">
+              <span class="timeline--content-high-icon"></span>
+              <div class="timeline--content-inner-container timeline--first-content-inner-container">
+                <div class="timeline--content">
+                  <div class="timeline--content-title">
+                    Climate change
+                  </div>
+                  <div class="timeline--content-date">
+                    3min 16s
+                  </div>
+                  <div class="timeline--content-text">
+                    “I saw the effect of climate change per stand in our northern most state Alaska where...”
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline--content-block">
+              <span class="timeline--content-low-icon"></span>
+              <div class="timeline--content-inner-container">
+                <div class="timeline--content">
+                  <div class="timeline--content-title">
+                    Sanctuary
+                  </div>
+                  <div class="timeline--content-date">
+                    2min 10s
+                  </div>
+                  <div class="timeline--content-text">
+                    “I saw the effect of climate change per stand in our northern most state Alaska where...”
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline--content-block">
+              <span class="timeline--content-middle-icon"></span>
+              <div class="timeline--content-inner-container">
+                <div class="timeline--content">
+                  <div class="timeline--content-title">
+                    Nation
+                  </div>
+                  <div class="timeline--content-date">
+                    2min 1s
+                  </div>
+                  <div class="timeline--content-text">
+                    “I saw the effect of climate change per stand in our northern most state Alaska where...”
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="_dashboard--transcript">
+            <div class="_dashboard--title transcript--title">
+              Transcript
+            </div>
+            <div class="transcript--content">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="_dashboard--how-it-works">
+        <div class="_dashboard--title how-it-works--loading">
+          L'analisi si sta inizializzando...
+        </div>
+        <div class="_dashboard--title how-it-works--title">
+          Come funziona il processo
+        </div>
+        <div class="how-it-works--steps-container">
+          <div class="how-it-works--step-item">
+            <img class="how-it-works--step-item-img" src="images/how-step-1.png" alt="" />
+            <div class="how-it-works--step-item-des">
+              1. Il video è riprodotto da Youtube e l'audio analizzato
+            </div>
+          </div>
+          <div class="how-it-works--step-item">
+            <img class="how-it-works--step-item-img" src="images/how-step-1.png" alt="" />
+            <div class="how-it-works--step-item-des">
+              2. L'audio viene trascritto con le API del servizio IBM Speech to Text
+            </div>
+          </div>
+          <div class="how-it-works--step-item">
+            <img class="how-it-works--step-item-img" src="images/how-step-1.png" alt="" />
+            <div class="how-it-works--step-item-des">
+              3. I concetti identificati dal servizio IBM Watson Insights sono raccolti
+            </div>
+          </div>
+          <div class="how-it-works--step-item">
+            <img class="how-it-works--step-item-img" src="images/how-step-1.png" alt="" />
+            <div class="how-it-works--step-item-des">
+              4. I concetti vengono ordinati in base al livello di confidenza
+            </div>
+          </div>
+          <div class="how-it-works--step-item">
+            <img class="how-it-works--step-item-img" src="images/how-step-1.png" alt="" />
+            <div class="how-it-works--step-item-des">
+              5. Alcuni talks TED-Ed e alcune pagine Wikipedia attinenti ai concetti trovati vengono consigliati all'utente
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <!-- Place js files at the end of the document, with fallbacks for CDNs -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
