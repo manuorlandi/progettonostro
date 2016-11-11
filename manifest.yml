@@ -7,7 +7,7 @@ declared-services:
     label: speech_to_text
     plan: standard
 applications:
-- name: Semantic-Placidi
+- name: progettonostro
   path: .
   command: npm start
   memory: 512M
@@ -17,4 +17,4 @@ applications:
   env:
     NODE_ENV: production
     SECURE_EXPRESS: 1
-  host: Semantic-Placidi
+  host: progetonostro
